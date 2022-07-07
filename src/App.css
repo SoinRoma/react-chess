@@ -18,6 +18,7 @@
     height: calc(64px * 8);
     display: flex;
     flex-wrap: wrap;
+    border: 2px solid gray;
 }
 
 .cell{
@@ -29,9 +30,9 @@
 }
 
 .white-cell{
-    background-color: aqua;
+    background-color: #b4eaea;
 }
 
 .black-cell{
-    background-color: brown;
+    background-color: #f38585;
 }
