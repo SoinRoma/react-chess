@@ -36,9 +36,13 @@
 }
 
 .white-cell{
-    background-color: #fae6b5;
+    background-color: #d9c388;
 }
 
 .black-cell{
-    background-color: #875326;
+    background-color: #b4703c;
+}
+
+.selected-cell{
+    background-color: #6c2810;
 }
