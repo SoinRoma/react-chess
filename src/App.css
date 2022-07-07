@@ -18,7 +18,7 @@
     height: calc(64px * 8);
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid gray;
+    outline: auto;
 }
 
 .cell{
