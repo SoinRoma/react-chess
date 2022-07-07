@@ -18,7 +18,7 @@
     height: calc(64px * 8);
     display: flex;
     flex-wrap: wrap;
-    outline: auto #76371d;
+    outline: 5px solid #601919;
 }
 
 .cell{
@@ -36,13 +36,24 @@
 }
 
 .white-cell{
-    background-color: #d9c388;
+    background-color: #F9DAAF;
 }
 
 .black-cell{
-    background-color: #b4703c;
+    background-color: #C06232;
 }
 
 .selected-cell{
     background-color: #6c2810;
+}
+
+.available-cell{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #5BB017;
+}
+
+.green-cell{
+    background-color: #5BB017;
 }
