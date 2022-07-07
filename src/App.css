@@ -18,7 +18,7 @@
     height: calc(64px * 8);
     display: flex;
     flex-wrap: wrap;
-    outline: auto;
+    outline: auto #76371d;
 }
 
 .cell{
@@ -36,9 +36,9 @@
 }
 
 .white-cell{
-    background-color: #b4eaea;
+    background-color: #fae6b5;
 }
 
 .black-cell{
-    background-color: #f38585;
+    background-color: #875326;
 }
