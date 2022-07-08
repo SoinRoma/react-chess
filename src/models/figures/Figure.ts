@@ -1,5 +1,5 @@
 import {Colors} from "../Colors";
-import logo from '../../images/black-bishop.png';
+import logo from '../../images/black-king.png';
 import {Cell} from "../Cell";
 
 export enum FigureNames {
