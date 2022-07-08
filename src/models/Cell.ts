@@ -26,8 +26,15 @@ export class Cell {
     }
 
     // Проверка на пустую клетку
-    isEmpty() {
+    isEmpty(): boolean {
         return this.figure === null;
+    }
+
+    isEnemy(target: Cell): boolean {
+        if(target.figure){
+            return this.figure?.color !== target.figure.color;
+        }
+        return false;
     }
 
     // Проверка вертикали на наличие вражеских фигур
