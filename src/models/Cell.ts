@@ -112,9 +112,17 @@ export class Cell {
         this.figure.cell = this;
     }
 
+    addLostFigure(figure: Figure) {
+        figure.color === Colors.WHITE ? this.board.lostWhiteFigures.push(figure) : this.board.lostBlackFigures.push(figure);
+    }
+
     moveFigure(target: Cell) {
         if (this.figure && this.figure?.canMove(target)) {
             this.figure.moveFigure(target);
+            // Проверяем съели ли фигуру
+            if(target.figure){
+                this.addLostFigure(target.figure);
+            }
             // меняем фигуру на новое место, а старое место удаляем
             target.setFigure(this.figure);
             this.figure = null;

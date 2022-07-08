@@ -6,9 +6,12 @@ import {Queen} from "./figures/Queen";
 import {King} from "./figures/King";
 import {Rook} from "./figures/Rook";
 import {Bishop} from "./figures/Bishop";
+import {Figure} from "./figures/Figure";
 
 export class Board {
     cells: Cell[][] = [];
+    lostBlackFigures: Figure[] = [];
+    lostWhiteFigures: Figure[] = [];
 
     // Инициализация ячеек в доске
     public initCells() {
@@ -30,6 +33,8 @@ export class Board {
     public getCopyBoard (): Board  {
         const newBoard = new Board();
         newBoard.cells = this.cells;
+        newBoard.lostWhiteFigures = this.lostWhiteFigures;
+        newBoard.lostBlackFigures = this.lostBlackFigures;
         return newBoard
     }
 
