@@ -7,7 +7,7 @@ interface LostFiguresProps {
     figures: Figure[];
 }
 
-const LostFigures: FC<LostFiguresProps> = ({title, figures}) => {
+const LostFiguresComponent: FC<LostFiguresProps> = ({title, figures}) => {
     return (
         <div className="lost">
             <h3>{title}</h3>
@@ -20,4 +20,4 @@ const LostFigures: FC<LostFiguresProps> = ({title, figures}) => {
     );
 };
 
-export default LostFigures;
+export default LostFiguresComponent;
