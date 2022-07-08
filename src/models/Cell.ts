@@ -31,7 +31,7 @@ export class Cell {
     }
 
     isEnemy(target: Cell): boolean {
-        if(target.figure){
+        if (target.figure) {
             return this.figure?.color !== target.figure.color;
         }
         return false;
@@ -88,6 +88,22 @@ export class Cell {
             }
         }
         return true;
+    }
+
+    isKing(target: Cell): boolean {
+        // Ходить нельзя кроме соседних стобцов и текущего
+        if (this.x !== target.x && this.x !== target.x + 1 && this.x !== target.x - 1) {
+            return false;
+        }
+        // Ходить нельзя кроме соседних строк и текущей
+        if (this.y !== target.y && this.y !== target.y + 1 && this.y !== target.y - 1) {
+            return false;
+        }
+
+        // Реализовать ракировку
+
+        return true;
+
     }
 
     // Обновление области видимости фигуры после смены хода
