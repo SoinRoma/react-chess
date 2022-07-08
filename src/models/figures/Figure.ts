@@ -30,8 +30,18 @@ export class Figure {
         this.id = Math.random();
     }
 
+    // Функция куда можно ходить фигурам
     canMove(target: Cell): boolean {
+        // Условие, что своих фигур есть нельзя
+        if(target.figure?.color === this.color){
+            return false;
+        }
+        // Короля есть нельзя
+        if(target.figure?.name === FigureNames.KING){
+            return false;
+        }
         return true;
+
     }
 
     moveFigure(target: Cell) {
