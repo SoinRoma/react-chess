@@ -10,7 +10,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: azure;
+    background-color: #d5d4d1;
+}
+
+.timer-parent{
+    height: 100vh;
+    padding: 30px;
+    background-color: #c9c7c7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer-parent button{
+    background-color: #e0cfb5;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 7px;
+    margin-bottom: 40px;
 }
 
 .board{
@@ -19,7 +38,7 @@
     display: flex;
     flex-wrap: wrap;
     outline: 5px solid #601919;
-    margin-left: 120px;
+    margin: auto;
 }
 
 .title{
@@ -27,7 +46,6 @@
     margin-bottom: 10px;
     text-transform: uppercase;
     width: calc(64px * 8);
-    margin-left: 120px;
 }
 
 .cell{
@@ -74,7 +92,7 @@
 .lost{
     height: 100vh;
     padding: 30px;
-    background-color: #c4c4c4;
+    background-color: #c9c7c7;
 }
 
 .lost img{
