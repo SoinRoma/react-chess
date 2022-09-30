@@ -29,3 +29,8 @@ npm install
 ```
 npm start
 ```
+
+4. Деплой приложения в Github Pages
+```
+npm run deploy
+```
